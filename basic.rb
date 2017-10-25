@@ -61,4 +61,23 @@ end
 puts combine_arrays country_array, capital_array
 
 
+# Question Four
+
+
+def fizz_buzz
+	for i in 1..100 do
+		if i % 3 == 0 and i % 5 == 0
+			puts "#{i} : Fizzbuzz"
+		elsif i % 3 == 0
+			puts "#{i} ~ Fizz"
+		elsif i % 5 == 0
+			puts "#{i} -- Buzz!"
+		else
+			puts "#{i}"
+		end
+	end
+end
+
+
+fizz_buzz
 
