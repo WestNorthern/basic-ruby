@@ -81,3 +81,39 @@ end
 
 fizz_buzz
 
+
+# Intermediate
+
+
+
+def compliments
+	puts "If you would like a compliment, please select from our compliment list: \n 1. A coiff compliment. \n 2. A toe nail compliment \n 3. A dress suit compliment \n 4. You have heard enough compliments"
+	choice = gets.chomp.to_i
+
+	
+	
+	while choice != 4
+
+		if choice == 1
+			puts "What beautiful locks of flowing hair you have, Oh Ruby Expert."
+      puts "\n 1. A coiff compliment. \n 2. A toe nail compliment \n 3. A dress suit compliment \n 4. You have heard enough compliments"
+      choice = gets.chomp.to_i
+		elsif choice == 2
+			puts "Ruby Master, your toe nails are unparalleled in their exquisiteness."
+      puts "\n 1. A coiff compliment. \n 2. A toe nail compliment \n 3. A dress suit compliment \n 4. You have heard enough compliments"
+			choice = gets.chomp.to_i
+		elsif choice == 3
+			puts "Lo! Your dress suit could launch a thousand ships, Mr. Fancy Ruby Man."
+      puts "\n 1. A coiff compliment. \n 2. A toe nail compliment \n 3. A dress suit compliment \n 4. You have heard enough compliments"
+			choice = gets.chomp.to_i
+		else
+			puts "Please choose a number between 1 and 4, Ruby Ninja."
+			puts "\n 1. A coiff compliment. \n 2. A toe nail compliment \n 3. A dress suit compliment \n 4. You have heard enough compliments"
+
+			choice = gets.chomp.to_i
+		end
+	end
+end
+
+compliments
+
