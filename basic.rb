@@ -5,14 +5,20 @@ end
 puts only_in_america("Cat's that play fetch???")
 
 
-# def max_value_in_array(array)
-# 	max_num
-# 	array.each { 
-# 		|x| if max_num < array[x]
-# 		max_num = array[x]
-# 	 }
-# 	return max_num
-# end
+def max_value_in_array(array)
+	max = 0
+	array.each { |x|
+		if x > max
+			max = x
+		end
+	}
+	return max
+end
 
 
-# puts max_value_in_array([1, 3, 5, 7])
+puts max_value_in_array([11, 13, 5, 7])
+
+new_test = [7, 9, 42, 0, -22]
+
+puts max_value_in_array(new_test)
+
